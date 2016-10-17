@@ -11,6 +11,8 @@ function start () {
   two();
 
   three();
+
+  makeVisible();
 }
 
 function one () {
@@ -33,3 +35,7 @@ function three() {
   three.classList.add("yellow");
 }
 // CREATE FUNCTION makeVisible HERE
+function makeVisible () {
+  var visDiv = document.getElementsByClassName('invisible')[0];
+  visDiv.classList.toggle("visible");
+}
